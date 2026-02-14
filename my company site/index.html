@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarius Healthcare</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .hero { background: linear-gradient(to right, #fefe4f, #00f2fe); color: black; text-align: center; padding: 1px 20px 60px; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.5em; margin-bottom: 30px; }
+        .btn { background: #756bff; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .about { background: #f8f9fa; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .service { flex: 1 1 300px; text-align: center; padding: 30px; background: #4facfe; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.742);font-weight: bold; }
+        .contact { background: #333; color: white; text-align: center; }
+        .contact form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+        .contact input, .contact textarea { padding: 15px; border: none; border-radius: 5px; }
+        .contact button { background: #4facfe; color: white; padding: 15px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; }
+        .contact-info { margin-top: 30px; line-height: 1.8; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2em; } .services { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <img src="logo.png" alt="logo" style="max-width: 400px;">
+        <p>We deliver quality medical devices with precision and care, serving as your trusted partner in advanced healthcare solutions. 
+            By connecting innovation to better patient outcomes, we provide reliable medical equipment backed by dependable service, 
+            empowering healthcare through trusted distribution</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </header>
+
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>Our mission is to empower healthcare institutions with High-end MedTech devices, providing service excellence and deep clinical partnerships.
+        Empower – We aim to simplify access of Indian hospitals to global innovations to improve clinical outcomes and build hospital efficiencies.
+        Service Excellence – We achieve this by building long-term partnerships and sustainable business practices</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Product Portfolio</h2>
+        <div class="services">
+            <div class="service">
+                <p>Endoscopic Camera</p>
+            </div>
+            <div class="service">
+                <p>Orthopaedic Products</p>
+            </div>
+            <div class="service">
+                <p>Hospital Capital Item</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Email: solarius.healthcare@gmail.com | Phone: +91 98921 01118</p>
+            <p><strong>Contact Person:</strong> Ankur Setiya</p>
+            <p><strong>Address:</strong> Solarius Healtcare LLP, 
+        House No-1, 2nd Cross road, 9th main road, 
+        Physiowise Orthopaedic And Sports Physiotherapy Clinic, 
+        Banaswadi, Bengaluru, Karnataka, India, 560043</p>
+        </div>
+    </section>
+</body>
+</html>
