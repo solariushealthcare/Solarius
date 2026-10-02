@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solarius Healthcare | Advanced Medical Device Distribution | Bangalore</title>
+  <meta name="description" content="Solarius Healthcare is a Bangalore-based medical device distribution company. Primary partner of Stryker, also representing Canyon Microwave Ablation, Mölnlycke, and Argon Vascular. Led by experienced healthcare professional Ankur Setiya." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              50: '#FDFBF5',
+              100: '#F9F3E4',
+              200: '#F2E6C4',
+              300: '#E8D48E',
+              400: '#DFC56A',
+              500: '#D4B445',
+              600: '#C5A02E',
+              700: '#A38424',
+              800: '#7A621B',
+              900: '#524114',
+            },
+            ink: {
+              50: '#FAFAF9',
+              100: '#F5F5F4',
+              200: '#E7E5E4',
+              300: '#D6D3D1',
+              400: '#A8A29E',
+              500: '#78716C',
+              600: '#57534E',
+              700: '#44403C',
+              800: '#292524',
+              900: '#1C1917',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-hero {
+      background: linear-gradient(165deg, #FFFFFF 0%, #FBF9F3 55%, #F6F0E0 100%);
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #E8D48E 0%, #D4B445 48%, #C5A02E 100%);
+    }
+    .card-hover {
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 36px -10px rgba(197, 160, 46, 0.22);
+    }
+    .stryker-card {
+      border: 1.5px solid rgba(212, 180, 69, 0.5);
+      background: linear-gradient(165deg, #FFFFFF 0%, #FDFBF5 100%);
+      box-shadow: 0 4px 20px -4px rgba(28, 25, 23, 0.06);
+    }
+    .section-label {
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body class="font-sans text-ink-900 antialiased bg-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-ink-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="#home" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center shadow-sm">
+            <svg class="w-5 h-5 text-ink-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xl font-bold text-ink-900 tracking-tight">Solarius</span>
+            <span class="text-xl font-light text-gold-600"> Healthcare</span>
+          </div>
+        </a>
+        
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-sm font-medium text-ink-600 hover:text-gold-600 transition">About</a>
+          <a href="#solutions" class="text-sm font-medium text-ink-600 hover:text-gold-600 transition">Solutions</a>
+          <a href="#experience" class="text-sm font-medium text-ink-600 hover:text-gold-600 transition">Experience</a>
+          <a href="#careers" class="text-sm font-medium text-ink-600 hover:text-gold-600 transition">Careers</a>
+          <a href="#contact" class="ml-2 inline-flex items-center px-5 py-2.5 rounded-full gold-gradient text-ink-900 text-sm font-semibold hover:opacity-90 transition shadow-sm">
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-ink-700 hover:bg-ink-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-ink-200 bg-white">
+      <div class="px-4 py-3 space-y-1">
+        <a href="#about" class="block px-3 py-2 rounded-lg text-ink-800 hover:bg-gold-50">About</a>
+        <a href="#solutions" class="block px-3 py-2 rounded-lg text-ink-800 hover:bg-gold-50">Solutions</a>
+        <a href="#experience" class="block px-3 py-2 rounded-lg text-ink-800 hover:bg-gold-50">Experience</a>
+        <a href="#careers" class="block px-3 py-2 rounded-lg text-ink-800 hover:bg-gold-50">Careers</a>
+        <a href="#contact" class="block px-3 py-2 rounded-lg text-gold-700 font-medium hover:bg-gold-50">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+    <div class="absolute inset-0 gradient-hero"></div>
+    <div class="absolute inset-0 opacity-40" style="background-image: radial-gradient(circle at 15% 40%, rgba(212,180,69,0.14) 0%, transparent 45%), radial-gradient(circle at 85% 15%, rgba(212,180,69,0.09) 0%, transparent 40%);"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-100 text-gold-800 text-sm font-medium mb-6 border border-gold-200">
+          <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+          Bangalore · Medical Device Distribution
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-ink-900 leading-tight tracking-tight mb-6">
+          Latest Technology in Medical Tech, Supplied with Trust and Reliability
+        </h1>
+        <p class="text-lg sm:text-xl text-ink-600 leading-relaxed mb-10 max-w-2xl">
+          Solarius Healthcare brings advanced medical technologies to Indian hospitals and clinicians — delivered with the trust, reliability, and deep industry experience that partnerships demand.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#solutions" class="inline-flex items-center justify-center px-7 py-3.5 rounded-full gold-gradient text-ink-900 font-semibold hover:opacity-90 transition shadow-lg">
+            Explore Solutions
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="#contact" class="inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-ink-300 text-ink-800 font-semibold hover:border-gold-500 hover:text-gold-700 transition">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="bg-white border-y border-ink-200 py-9">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-xs font-semibold text-ink-500 uppercase tracking-widest mb-6 section-label">Authorized Distribution Partners</p>
+      <div class="flex flex-wrap justify-center items-center gap-x-8 sm:gap-x-12 gap-y-4">
+        <div class="text-lg font-semibold text-ink-800 tracking-tight">Stryker</div>
+        <div class="text-lg font-semibold text-ink-800 tracking-tight">Canyon Medical</div>
+        <div class="text-lg font-semibold text-ink-800 tracking-tight">Mölnlycke</div>
+        <div class="text-lg font-semibold text-ink-800 tracking-tight">Argon Medical</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <h2 class="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-3 section-label">About Solarius</h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-ink-900 leading-tight mb-6">
+            Built on Experience.<br>Driven by Clinical Impact.
+          </h3>
+          <p class="text-lg text-ink-600 leading-relaxed mb-6">
+            Solarius Healthcare is a specialized medical device distribution company based in Bangalore. We work with leading global manufacturers to bring advanced, clinically proven technologies to hospitals and clinicians across India — with a clear focus on trust, precision, and long-term partnership.
+          </p>
+          <p class="text-lg text-ink-600 leading-relaxed mb-8">
+            We go beyond supply. Every engagement is backed by application support, structured training, and a relationship-first approach so that the technologies we introduce deliver real value in the operating room and for patients.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="flex items-center gap-2 text-sm font-medium text-ink-800">
+              <span class="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold">✓</span>
+              Clinical expertise first
+            </div>
+            <div class="flex items-center gap-2 text-sm font-medium text-ink-800">
+              <span class="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold">✓</span>
+              Reliable supply chain
+            </div>
+            <div class="flex items-center gap-2 text-sm font-medium text-ink-800">
+              <span class="w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 font-bold">✓</span>
+              Local Bangalore presence
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="bg-gold-50 rounded-2xl p-8 md:p-10 border border-gold-200">
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center text-ink-900 font-bold text-lg shrink-0">1</div>
+                <div>
+                  <h4 class="font-semibold text-ink-900 mb-1">Deep Domain Knowledge</h4>
+                  <p class="text-ink-600 text-sm">Years of experience across medical devices, product management, key accounts, and commercial strategy in the Indian healthcare market.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center text-ink-900 font-bold text-lg shrink-0">2</div>
+                <div>
+                  <h4 class="font-semibold text-ink-900 mb-1">Focused Portfolio</h4>
+                  <p class="text-ink-600 text-sm">Partnerships with Stryker, Canyon microwave ablation, Mölnlycke wound care, and Argon vascular products.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center text-ink-900 font-bold text-lg shrink-0">3</div>
+                <div>
+                  <h4 class="font-semibold text-ink-900 mb-1">Partnership Approach</h4>
+                  <p class="text-ink-600 text-sm">We work closely with clinicians and hospital teams to ensure successful adoption and continuous support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="py-20 md:py-28 bg-ink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-3 section-label">Our Solutions</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-ink-900 mb-4">Technologies That Make a Difference</h3>
+        <p class="text-lg text-ink-600">We distribute carefully selected, high-impact medical technologies from global leaders.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Stryker -->
+        <div class="stryker-card rounded-2xl overflow-hidden card-hover">
+          <div class="h-44 bg-ink-50 flex items-center justify-center p-4 border-b border-gold-200/60">
+            <img src="images/stryker-mako.jpg" alt="Stryker Mako SmartRobotics" class="max-h-full max-w-full object-contain">
+          </div>
+          <div class="p-7 md:p-8">
+            <h4 class="text-xl font-bold text-ink-900 mb-3">Stryker</h4>
+            <p class="text-ink-600 text-sm mb-5 leading-relaxed">
+              One of the world’s leading medical technology companies. Innovative solutions across orthopaedics, surgical equipment, neurotechnology and more — supported by deep commercial and clinical experience.
+            </p>
+            <ul class="space-y-2 text-sm text-ink-600">
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Trusted global portfolio</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> High-quality surgical technologies</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Strong local relationship & support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Canyon -->
+        <div class="stryker-card rounded-2xl overflow-hidden card-hover">
+          <div class="h-44 bg-ink-50 flex items-center justify-center p-4 border-b border-gold-200/60">
+            <img src="images/canyon-mwa.jpg" alt="Canyon Microwave Ablation Antenna" class="max-h-full max-w-full object-contain">
+          </div>
+          <div class="p-7 md:p-8">
+            <h4 class="text-xl font-bold text-ink-900 mb-3">Canyon Microwave Ablation</h4>
+            <p class="text-ink-600 text-sm mb-5 leading-relaxed">
+              Advanced microwave ablation systems for precise soft tissue ablation — ideal for liver, thyroid, lung and other solid organ applications.
+            </p>
+            <ul class="space-y-2 text-sm text-ink-600">
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> MaxBlate® generators & antennas</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Spherical ablation zones</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Clinical training support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mölnlycke -->
+        <div class="stryker-card rounded-2xl overflow-hidden card-hover">
+          <div class="h-44 bg-ink-50 flex items-center justify-center p-4 border-b border-gold-200/60">
+            <img src="images/molnlycke-mepilex.jpg" alt="Mölnlycke Mepilex advanced wound dressings" class="max-h-full max-w-full object-contain">
+          </div>
+          <div class="p-7 md:p-8">
+            <h4 class="text-xl font-bold text-ink-900 mb-3">Mölnlycke Wound Management</h4>
+            <p class="text-ink-600 text-sm mb-5 leading-relaxed">
+              Premium solutions for advanced wound care from a global leader in surgical and wound management products designed to improve healing outcomes.
+            </p>
+            <ul class="space-y-2 text-sm text-ink-600">
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Advanced wound dressings</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Evidence-based healing</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Clinician-trusted range</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Argon -->
+        <div class="stryker-card rounded-2xl overflow-hidden card-hover">
+          <div class="h-44 bg-ink-50 flex items-center justify-center p-4 border-b border-gold-200/60">
+            <img src="images/argon-vascular.jpg" alt="Argon Medical vascular product" class="max-h-full max-w-full object-contain">
+          </div>
+          <div class="p-7 md:p-8">
+            <h4 class="text-xl font-bold text-ink-900 mb-3">Argon Vascular Products</h4>
+            <p class="text-ink-600 text-sm mb-5 leading-relaxed">
+              Specialized vascular access and interventional products supporting procedures that require precision, reliability and clinician confidence.
+            </p>
+            <ul class="space-y-2 text-sm text-ink-600">
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Vascular access solutions</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Interventional support</li>
+              <li class="flex items-start gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0"></span> Quality-focused range</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Leadership -->
+  <section id="experience" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-3 section-label">Leadership</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-ink-900 mb-4">Built on Conviction & Clarity</h3>
+        <p class="text-lg text-ink-600">A leadership style grounded in deep domain expertise, strong relationships, and a clear focus on outcomes that matter for clinicians and patients.</p>
+      </div>
+
+      <div class="bg-ink-50 rounded-3xl p-8 md:p-12 border border-ink-200">
+        <div class="grid lg:grid-cols-5 gap-10 items-center">
+          <div class="lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div class="w-48 h-56 md:w-56 md:h-64 rounded-2xl overflow-hidden shadow-md border border-ink-200 mb-6 bg-white">
+              <img src="images/ankur-setiya.jpg" alt="Ankur Setiya, Founder of Solarius Healthcare" class="w-full h-full object-cover object-top">
+            </div>
+            <h4 class="text-2xl font-bold text-ink-900 mb-1">Ankur Setiya</h4>
+            <p class="text-gold-700 font-medium mb-4">Founder, Solarius Healthcare</p>
+            <p class="text-ink-600 text-sm leading-relaxed max-w-sm">
+              A results-driven healthcare leader known for building trust with hospitals and clinicians, driving commercial excellence, and bringing advanced medical technologies to market with clarity and conviction.
+            </p>
+          </div>
+          
+          <div class="lg:col-span-3 space-y-5">
+            <div class="flex gap-4">
+              <div class="w-2 rounded-full bg-gold-500 shrink-0"></div>
+              <div>
+                <h5 class="font-semibold text-ink-900">Business Head – Key Accounts, Stryker</h5>
+                <p class="text-sm text-ink-500 mb-1">2022 – Present</p>
+                <p class="text-ink-600 text-sm">Leading key account strategy and commercial excellence — shaping partnerships that deliver measurable impact for one of the world’s foremost medical technology companies.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-2 rounded-full bg-gold-400 shrink-0"></div>
+              <div>
+                <h5 class="font-semibold text-ink-900">Manager – Strategy & Commercial Excellence, Stryker</h5>
+                <p class="text-sm text-ink-500 mb-1">2020 – 2022</p>
+                <p class="text-ink-600 text-sm">Drove strategic initiatives and commercial discipline across key markets.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-2 rounded-full bg-gold-400 shrink-0"></div>
+              <div>
+                <h5 class="font-semibold text-ink-900">Key Accounts Manager – North, Stryker</h5>
+                <p class="text-sm text-ink-500 mb-1">2018 – 2020</p>
+                <p class="text-ink-600 text-sm">Built and strengthened high-value institutional relationships across North India.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-2 rounded-full bg-gold-300 shrink-0"></div>
+              <div>
+                <h5 class="font-semibold text-ink-900">Foundation in Product & Marketing</h5>
+                <p class="text-ink-600 text-sm">Product Manager at Stryker · Marketing Manager at Piramal · Asst. Product Manager at Poly Medicure — a strong base in product strategy and market development.</p>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-ink-200">
+              <p class="text-sm text-ink-600">
+                <span class="font-medium text-ink-800">Education:</span> B.Sc. (Hons.) Biomedical Sciences, Delhi University · PGDM, FORE School of Management, New Delhi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers -->
+  <section id="careers" class="py-20 md:py-28 bg-ink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-3 section-label">Careers</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-ink-900 mb-5">Join Solarius Healthcare</h3>
+        <p class="text-lg text-ink-600 mb-10 leading-relaxed">
+          We are actively looking for passionate fresh Biomedical Engineering (BME) graduates who want to build a career in medical device distribution, clinical support, and healthcare technology.
+        </p>
+        
+        <div class="bg-white rounded-2xl p-8 md:p-10 border border-ink-200 text-left shadow-sm">
+          <h4 class="text-xl font-bold text-ink-900 mb-3">What we look for</h4>
+          <ul class="space-y-3 mb-8 text-ink-700">
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">✓</span>
+              Fresh Biomedical Engineering graduates with strong fundamentals
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">✓</span>
+              Interest in medical devices, clinical applications and hospital engagement
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">✓</span>
+              Willingness to learn, travel within the region, and grow with a focused team
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center text-sm font-bold shrink-0 mt-0.5">✓</span>
+              Good communication skills and a customer-first mindset
+            </li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 rounded-full gold-gradient text-ink-900 font-semibold hover:opacity-90 transition">
+            Apply / Express Interest
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 md:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-14">
+        <div>
+          <h2 class="text-sm font-semibold text-gold-600 uppercase tracking-wider mb-3 section-label">Contact</h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-ink-900 mb-5">Let’s Talk</h3>
+          <p class="text-lg text-ink-600 mb-8 leading-relaxed">
+            Whether you are a hospital looking for advanced technologies, a clinician interested in microwave ablation or wound care solutions, or a BME graduate exploring opportunities — we would love to hear from you.
+          </p>
+          
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-gold-100 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-gold-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-ink-900">Location</h4>
+                <p class="text-ink-600">Bangalore, Karnataka, India</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-gold-100 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-gold-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-ink-900">Email</h4>
+                <a href="mailto:Solarius.healthcare@gmail.com" class="text-ink-700 hover:text-gold-600 transition">Solarius.healthcare@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-ink-50 rounded-2xl p-7 md:p-9 border border-ink-200">
+          <form class="space-y-5" onsubmit="event.preventDefault(); alert('Thank you! This is a demo form. Please email us directly at Solarius.healthcare@gmail.com');">
+            <div>
+              <label class="block text-sm font-medium text-ink-800 mb-1.5">Full Name</label>
+              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-ink-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition bg-white" placeholder="Your name">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-ink-800 mb-1.5">Email</label>
+              <input type="email" required class="w-full px-4 py-3 rounded-xl border border-ink-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition bg-white" placeholder="you@hospital.com">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-ink-800 mb-1.5">Organization / Hospital (optional)</label>
+              <input type="text" class="w-full px-4 py-3 rounded-xl border border-ink-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition bg-white" placeholder="Hospital or company name">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-ink-800 mb-1.5">How can we help?</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-ink-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition bg-white">
+                <option>Product enquiry</option>
+                <option>Clinical demonstration / training</option>
+                <option>Career / Job application</option>
+                <option>Partnership discussion</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-ink-800 mb-1.5">Message</label>
+              <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-ink-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition resize-none bg-white" placeholder="Tell us a bit more..."></textarea>
+            </div>
+            <button type="submit" class="w-full py-3.5 rounded-xl gold-gradient text-ink-900 font-semibold hover:opacity-90 transition shadow-sm">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-ink-200 text-ink-600 py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+        <div>
+          <div class="flex items-center gap-2.5 mb-4">
+            <div class="w-8 h-8 rounded-lg gold-gradient flex items-center justify-center">
+              <svg class="w-4 h-4 text-ink-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <span class="text-lg font-bold text-ink-900">Solarius Healthcare</span>
+          </div>
+          <p class="text-sm text-ink-500 max-w-xs leading-relaxed">
+            Specialized medical device distribution based in Bangalore. Partners: Stryker, Canyon, Mölnlycke and Argon.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-10 text-sm">
+          <div>
+            <h5 class="font-semibold text-ink-900 mb-3">Navigate</h5>
+            <ul class="space-y-2">
+              <li><a href="#about" class="hover:text-gold-600 transition">About</a></li>
+              <li><a href="#solutions" class="hover:text-gold-600 transition">Solutions</a></li>
+              <li><a href="#careers" class="hover:text-gold-600 transition">Careers</a></li>
+              <li><a href="#contact" class="hover:text-gold-600 transition">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-semibold text-ink-900 mb-3">Focus Areas</h5>
+            <ul class="space-y-2 text-ink-500">
+              <li>Stryker Technologies</li>
+              <li>Microwave Ablation</li>
+              <li>Wound Management</li>
+              <li>Vascular Products</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-ink-200 text-sm text-ink-500 flex flex-col sm:flex-row justify-between gap-3">
+        <p>© 2026 Solarius Healthcare. All rights reserved.</p>
+        <p>Bangalore, Karnataka, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    // Close mobile menu on link click
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+  </script>
+</body>
+</html>
